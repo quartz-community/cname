@@ -63,6 +63,17 @@
     "tsup": "^8.5.0",
     "typescript": "^5.9.3"
   },
+  "quartz": {
+    "name": "cname",
+    "displayName": "CNAME",
+    "category": "emitter",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultOrder": 50,
+    "defaultEnabled": true,
+    "defaultOptions": {}
+  },
   "engines": {
     "node": ">=22",
     "npm": ">=10.9.2"
