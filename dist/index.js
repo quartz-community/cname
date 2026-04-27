@@ -1,6 +1,12 @@
 import path from 'path';
 import fs from 'fs/promises';
-import { joinSegments } from '@quartz-community/types';
+
+// src/emitter.ts
+
+// node_modules/@quartz-community/types/dist/index.js
+function joinSegments(...segments) {
+  return segments.filter((segment) => segment.length > 0).join("/").replace(/\/+/g, "/");
+}
 
 // src/emitter.ts
 var write = async (ctx, slug, ext, content) => {
