@@ -3,7 +3,7 @@ import fs from 'fs/promises';
 
 // src/emitter.ts
 
-// node_modules/@quartz-community/types/dist/index.js
+// ../types/dist/index.js
 function joinSegments(...segments) {
   return segments.filter((segment) => segment.length > 0).join("/").replace(/\/+/g, "/");
 }
